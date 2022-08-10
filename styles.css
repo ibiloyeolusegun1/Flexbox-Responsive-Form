@@ -1,0 +1,178 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: brown;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 60px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.container-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.container-box .text-box{
+  flex: 1 1 40rem;
+  margin: 50px 0;
+}
+.container-box .text-box h3{
+  font-size: 2.5rem;
+  width: 60%;
+  color: rgb(197, 195, 195);
+  margin-bottom: 16px;
+  line-height: 1;
+}
+.container-box .text-box p{
+  width: 80%;
+  font-size: 14px;
+  color: rgb(197, 195, 195);
+  margin-bottom: 16px;
+  line-height: 2;
+}
+
+.container-box .form-box{
+  flex: 1 1 40rem;
+}
+.container-box .form-box h4{
+  width: 100%;
+  background-color: rgb(23, 23, 126);
+  padding: 15px 30px;
+  text-align: center;
+  color: #eee;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 1px rgba(58, 57, 57, 0.468);
+}
+.container-box .form-box h4 span{
+  color: rgb(167, 165, 165);
+  font-weight: 400;
+}
+.container-box .form-box form{
+  width: 100%;
+  background-color: #eee;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 1px rgba(58, 57, 57, 0.468);
+}
+.container-box .form-box form .box{
+  width: 100%;
+  background: none;
+  padding: 15px 25px;
+  outline: none;
+  border: 1px solid grey;
+  font-size: 13px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.container-box .form-box form .box:hover{
+  border: 1px solid #222;
+}
+.container-box .form-box form .btn{
+  width: 100%;
+  background-color: rgb(28, 178, 28);
+  color: #eee;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 15px 25px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container-box .form-box form .btn:hover{
+  background-color: rgb(15, 130, 15);
+}
+.container-box .form-box form p{
+  font-size: 11px;
+  text-align: center;
+  color: #777;
+}
+.container-box .form-box form p a{
+  text-decoration: none;
+  color: red;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+/*=========== Media Queries Section ===========*/
+
+@media (max-width:991px){
+  .container-box .text-box h3{
+    font-size: 2.2rem;
+    width: 100%;
+  }
+
+  .container-box .text-box p{
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width:768px){
+  .container{
+    width: 100%;
+    padding: 20px;
+  }
+  .container-box{
+    width: 100%;
+    display: block;
+  }
+  .container-box .text-box{
+    margin: 50px 0;
+  }
+
+  .container-box .form-box form{
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .container-box .text-box h3{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-box .text-box p{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+  .container-box .form-box h4{
+    margin-bottom: 25px;
+  }
+}
+
+
+@media (max-width:450px){
+  .container-box .form-box form{
+    padding: 20px 15px;
+  }
+  .container-box .form-box form p{
+    padding: 0 20px;
+  }
+}
